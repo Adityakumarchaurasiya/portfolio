@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Navbar</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="nav-container">
+        <div class="logo">Aditya.</div>
+        <ul class="nav-links">
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#certifications">Certifications</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <i class="fas fa-bars mobile-menu"></i>
+      </div>
+    </nav>
+
+    <section id="home">
+      <span id="element"></span>
+    </section>
+
+    <section id="about">
+      <h1>ABOUT SECTION</h1>
+      <div class="about-container">
+        <div class="about-content">
+          <h1 class="animated-heading">
+            Hello, I am <span class="highlight-name">Aditya Kumar</span>
+          </h1>
+          <p class="animated-text">
+            I'm a passionate
+            <span class="highlight">MERN Stack Developer</span> with expertise
+            in <span class="highlight">Java development</span>. My front-end
+            skills include
+            <span class="highlight">HTML5, CSS3, and JavaScript (ES6+)</span>,
+            while I work with
+            <span class="highlight">Node.js & Express.js</span> for back-end
+            development and <span class="highlight">MongoDB</span> for database
+            management.
+          </p>
+
+          <div class="social-links">
+            <a
+              href="https://www.linkedin.com/in/aditya-chaurasiya/"
+              class="social-btn linkedin"
+            >
+              <i class="fa-brands fa-linkedin"></i>
+              <span>LinkedIn</span>
+            </a>
+            <a
+              href="https://github.com/Adityakumarchaurasiya"
+              class="social-btn github"
+            >
+              <i class="fa-brands fa-github"></i>
+              <span>GitHub</span>
+            </a>
+            <a
+              href="https://leetcode.com/u/aditya7070_kumar/"
+              class="social-btn stack-overflow"
+            >
+              <i class="fa-brands fa-stack-overflow"></i>
+              <span>LeetCode</span>
+            </a>
+            <a href="/image/adityakumar.pdf" class="social-btn resume" download>
+              <i class="fa-solid fa-file"></i>
+              <span>Resume</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="about-image">
+          <img
+            src="/image/aditya kumar bihar.png"
+            alt="Aditya Kumar - MERN Stack Developer"
+            loading="lazy"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2 class="skills-heading">Technical Skills</h2>
+      <div class="skills-container">
+        <!-- HTML -->
+        <div class="skill-card">
+          <i class="fab fa-html5"></i>
+          <h3>HTML5</h3>
+        </div>
+
+        <!-- CSS -->
+        <div class="skill-card">
+          <i class="fab fa-css3-alt"></i>
+          <h3>CSS3</h3>
+        </div>
+
+        <!-- JavaScript -->
+        <div class="skill-card">
+          <i class="fab fa-js"></i>
+          <h3>JavaScript</h3>
+        </div>
+
+        <!-- Node.js -->
+        <div class="skill-card">
+          <i class="fab fa-node-js"></i>
+          <h3>Node.js</h3>
+        </div>
+
+        <!-- Express.js -->
+        <div class="skill-card">
+          <i class="fas fa-code"></i>
+          <h3>Express.js</h3>
+        </div>
+
+        <!-- MongoDB -->
+        <div class="skill-card">
+          <i class="fas fa-database"></i>
+          <h3>MongoDB</h3>
+        </div>
+
+        <!-- React -->
+        <div class="skill-card">
+          <i class="fab fa-react"></i>
+          <h3>ReactJS</h3>
+        </div>
+
+        <!-- MongoDB -->
+        <div class="skill-card">
+          <i class="fab fa-python"></i>
+          <h3>Python</h3>
+        </div>
+
+        <!-- MongoDB -->
+        <div class="skill-card">
+          <i class="fab fa-java"></i>
+          <h3>Java</h3>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2 class="section-title">Projects</h2>
+
+      <div class="projects-container">
+        <!-- Project Card 1 -->
+        <div class="project-card">
+          <div class="project-img">
+            <img src="/image/air bnb.png" alt="Project 1" />
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">AIR-BNB Website</h3>
+            <p class="project-description">
+              A full-stack room-booking platform built with the MERN stack,
+              featuring user authentication and authorization. The platform
+              allows users to perform CRUD (Create, Read, Update, Delete)
+              operations, create and manage listings, as well as edit or delete
+              those listings. It also integrates maps for enhanced
+              functionality.
+            </p>
+            <div class="project-tech">
+              <span>Html</span>
+              <span>Css</span>
+              <span>JavaScript</span>
+              <span>Node.js</span>
+              <span>Express.js</span>
+              <span>MongoDB</span>
+            </div>
+            <div class="project-buttons">
+              <a
+                href="https://github.com/Adityakumarchaurasiya/AIR-BN"
+                class="btn code-btn"
+              >
+                <i class="fas fa-code"></i>
+                Code
+              </a>
+              <a
+                href="https://air-bn-1.onrender.com/listing/data"
+                class="btn live-btn"
+              >
+                <i class="fas fa-external-link-alt"></i>
+                Live
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project Card 2 -->
+        <div class="project-card">
+          <!-- Repeat same structure for other projects -->
+
+          <div class="project-img">
+            <img src="/image/uber.jpeg" alt="Project 1" />
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">UBER Website</h3>
+            <p class="project-description">
+              I am developing a MERN stack project, specifically an Uber-like
+              website, where I will implement both authentication and
+              authorization mechanisms, as well as integrate a payment gateway
+              method.
+            </p>
+            <div class="project-tech">
+              <span>React</span>
+              <span>Node.js</span>
+              <span>Express.js</span>
+              <span>Socket.io</span>
+              <span>MongoDB</span>
+            </div>
+            <div class="project-buttons">
+              <a
+                href="https://github.com/Adityakumarchaurasiya/uber"
+                class="btn code-btn"
+              >
+                <i class="fas fa-code"></i>
+                Code
+              </a>
+              <a
+                href="https://github.com/Adityakumarchaurasiya/uber"
+                class="btn live-btn"
+              >
+                <i class="fas fa-external-link-alt"></i>
+                Live
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- //second div -->
+
+      <div class="projects-container">
+        <!-- Project Card 1 -->
+        <div class="project-card">
+          <div class="project-img">
+            <img src="/image//weather.png" alt="Project 1" />
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">WEATHER Application</h3>
+            <p class="project-description">
+              I have deployed a weather application that allows users to:
+
+              Check the weather for their current location.
+              View the temperature in real-time.
+            </p>
+            <div class="project-tech">
+              <span>React</span>
+              <span>Node.js</span>
+               <span>Express.js</span>
+               <span>Material-UI</span>
+            </div>
+            <div class="project-buttons">
+              <a href="https://github.com/Adityakumarchaurasiya/weather" class="btn code-btn">
+                <i class="fas fa-code"></i>
+                Code
+              </a>
+              <a href="https://adityakumarchaurasiya.github.io/weather/" class="btn live-btn">
+                <i class="fas fa-external-link-alt"></i>
+                Live
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project Card 2 -->
+        <div class="project-card">
+          <!-- Repeat same structure for other projects -->
+
+          <div class="project-img">
+            <img src="/image/todolist.jpeg" alt="Project 1" />
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">TODO-LIST Application</h3>
+            <p class="project-description">
+              I have deployed a to-do list application that allows users to:
+
+              Add daily tasks to their to-do list.
+              Mark tasks as completed once finished.
+              Delete specific tasks after they have been completed
+            </p>
+            <div class="project-tech">
+            <span>HTML5</span>
+            <span>CSS3</span>
+            <span>JavaScript</span>
+            <span>Bootstrap</span>
+            </div>
+            <div class="project-buttons">
+              <a href="https://github.com/Adityakumarchaurasiya/todo-game" class="btn code-btn">
+                <i class="fas fa-code"></i>
+                Code
+              </a>
+              <a href="https://todo-game-app.netlify.app/" class="btn live-btn">
+                <i class="fas fa-external-link-alt"></i>
+                Live
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="certifications">
+      <div class="certifications-section">
+        <h2 class="section-heading">My Certifications</h2>
+
+        <div class="certificate-card">
+          <div class="certificate-image-box">
+            <img
+              src="/image/certificate-delta-batch-20-659e5afc7fa67ec97205fc76_page-0001.jpg"
+              alt="AWS Certification"
+              class="certificate-img"
+            />
+          </div>
+
+          <div class="certificate-details">
+            <h3 class="certificate-title">
+              FULL STACK WEB DEVELOPER
+            </h3>
+            <ul class="certificate-points">
+              <li>Issued by: Apna College</li>
+              <li>Credential ID: 67a0a81850ee4403340a39b6</li>
+              <li>
+              full stack web development
+              </li>
+             
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="certifications-section">
+        <div class="certificate-card">
+          <div class="certificate-image-box">
+            <img
+              src="/image/dbms_page-0001.jpg"
+              alt="dbms"
+              class="certificate-img"
+            />
+          </div>
+
+          <div class="certificate-details">
+            <h3 class="certificate-title">
+              DATA BASE MANAGMENT SYSTEM
+            </h3>
+            <ul class="certificate-points">
+              <li>Issued by: Linkedin Learning</li>
+              <li>Date Earned: March 2025</li>
+              <li>
+               Database Managment System
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="certifications-section">
+        <div class="certificate-card">
+          <div class="certificate-image-box">
+            <img
+              src="/image/intership studio_page-0001.jpg"
+              alt="AWS Certification"
+              class="certificate-img"
+            />
+          </div>
+
+          <div class="certificate-details">
+            <h3 class="certificate-title">
+              INTERNSHIP STUDIO
+            </h3>
+            <ul class="certificate-points">
+              <li>Issued by: Internship Studio</li>
+              <li>Date Earned: March 2024</li>
+              <li>Credential ID: ISWDI254017</li>
+              <li>
+                website Design Development Internship
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="certifications-section">
+        <div class="certificate-card">
+          <div class="certificate-image-box">
+            <img
+              src="/image/oops_page-0001.jpg"
+              alt="AWS Certification"
+              class="certificate-img"
+            />
+          </div>
+
+          <div class="certificate-details">
+            <h3 class="certificate-title">
+              OPPS IN JAVA
+            </h3>
+            <ul class="certificate-points">
+              <li>Issued by: Simplilearn Skillup</li>
+              <li>Date Earned: February 2025</li>
+              <li>Credential ID: 7889094</li>
+              <li>
+               Opps in Java
+              </li>
+              
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h1>Contact Me</h1>
+      <div class="contact-section">
+        <div class="contact-container">
+          <div class="contact-content">
+            <!-- Punch Line -->
+            <div class="punch-line">
+              <h2>Let's Create Magic Together! ✨</h2>
+              <p>
+                Digital handshakes turn into amazing collaborations.<br />
+                Whether you're here to chat, collaborate, or just say hi -<br />
+                my inbox is always open to possibilities!
+              </p>
+              <div class="contact-decoration">🚀📡💻</div>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="contact-info">
+              <h1>🎯 NAME <b>ADITYA KUMAR</b></h1>
+              <h1>📧 EMAIL <b>adityakumar583ak@gmail.com</b></h1>
+              <h1>📱 PHONE <b>+91 7070371608</b></h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="creative-footer">
+      <div class="footer-content">
+        <div class="footer-message">
+          <h3 class="floating-text">
+            🚀 Thanks for scrolling this far – you've earned a digital
+            high-five! ✋
+          </h3>
+        </div>
+      </div>
+    </footer>
+
+    <!-- javascript code -->
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#element", {
+        strings: [
+          "<i>Hello,</i> I Am ADITYA KUMAR.",
+          "&amp; I Am A ",
+          "&amp; MERN STACK DEVELOPER.</b>",
+        ],
+        typeSpeed: 50,
+      });
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
